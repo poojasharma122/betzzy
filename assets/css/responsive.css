@@ -1,12 +1,13 @@
 
-@media screen and(max-width:1200px) {
-  .second-table-container {
-    min-width: 1200px;
-    }
-    
-    .table-container {
-    overflow-x: scroll;
-    }
+@media screen and (max-width:1200px) {
+        .second-table-container {
+            min-width: 1200px;
+            }
+            
+            .table-container {
+            overflow-x: scroll;
+            }
+
 }
 
 @media screen and (max-width:1024px){
