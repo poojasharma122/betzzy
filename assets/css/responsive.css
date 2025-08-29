@@ -64,8 +64,7 @@
     }
 
     .account_img {
-        min-height: 180px;
-        height: 200px;
+        height: 350px;
         margin-top: 2rem;
       }
       .account_inner_text {
@@ -112,7 +111,7 @@
 }
 
 .promo-img, .promo-text {
-    height: 80px !important;
+    height: 100px !important;
 }
 
 .col-md-4, .col-sm-6 {
@@ -132,8 +131,7 @@
     padding: 0;
   }
   .account_img {
-    min-height: 140px;
-    height: 160px;
+    height: 350px;
     margin-top: 1.5rem;
   }
   .account_inner_text h2 {
@@ -174,6 +172,15 @@
     flex-wrap: wrap;
 }
 
+.hero-content h1 {
+  font-size: 3.125rem;
+  line-height: 4.125rem;
+}
+
+.choose_licensed_img {
+  height: 300px;
+}
+
 }
 
 
@@ -200,4 +207,26 @@
         height: 120px;
       }
 
+}
+
+@media screen and (max-width:425px){
+  .hero-content h1 {
+    font-size: 2.125rem;
+    margin-bottom: 1rem;
+    line-height: 3.125rem;
+}
+
+.hero-img {
+  height: 380px;
+  width: 100%;
+}
+
+.choose_licensed {
+  margin-top: 3rem;
+}
+
+.second_heading {
+  font-size: 2.1rem;
+  line-height: 3rem;
+}
 }
