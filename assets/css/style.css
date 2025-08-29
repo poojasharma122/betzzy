@@ -687,18 +687,38 @@ ul {
 }
 .review-paddypower {
     background-image: url('../images/game-logo1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #18003a;
 }
 .review-boylesports {
     background-image: url('../images/game-logo2.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #001f5f;
 }
 .review-bet365 {
     background-image: url('../images/Bet365_Logo.svg.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #007c5b;
 }
 .review-ladbrokes {
     background-image: url('../images/game-logo4.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #e30517;
 }
 .review-888sport {
     background-image: url('../images/game-logo5.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fe5500;
 }
 .review-overlay {
     position: absolute;
