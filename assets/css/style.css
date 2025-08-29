@@ -1377,6 +1377,14 @@ ul {
             display: flex;
         }
 
+        .second-table-container {
+            min-width: 1200px;
+            }
+            
+            .table-container {
+            overflow-x: scroll;
+            }
+
 
 
 

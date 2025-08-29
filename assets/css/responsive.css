@@ -1,4 +1,14 @@
 
+@media screen and(max-width:1200px) {
+  .second-table-container {
+    min-width: 1200px;
+    }
+    
+    .table-container {
+    overflow-x: scroll;
+    }
+}
+
 @media screen and (max-width:1024px){
   .review-btn {
     font-weight: 500;
@@ -100,16 +110,12 @@
 
       /* chat first */
 
-        .site-row {
+        /* .site-row {
         flex-wrap: wrap;
         text-align: center;
       }
     
-      /* .betting_site_logo {
-        width: 120px;
-        height: 70px;
-        margin-bottom: 10px;
-      } */
+      
 
       .betting_site_logo {
         height: 70px;
@@ -143,7 +149,7 @@
         background: linear-gradient(90deg, #fcb503 46%, #e5881b 54%, #fcb11a);
         color: #fff;
         font-size: 14px;
-      } 
+      }  */
 
 
       .hometable-mobile-card {
