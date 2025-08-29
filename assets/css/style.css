@@ -1283,7 +1283,7 @@ ul {
     .hometable-mobile-flex {display: grid;grid-template-columns: 1fr 1fr;gap: 25px;align-items: center;}
     
     .hometable-mobile-logo img {
-        width: 100%;
+        width: 150px;
         height: 200px;
         object-fit: cover;
         max-height: 100px;
