@@ -271,7 +271,7 @@ ul {
 }
 
 .hero-img {
-    background-image: url("../images/seconf-hero-banner.jpg");
+    background-image: url("../images/herobanner.png");
     height: 500px;
     background-repeat: no-repeat;
     background-position: center;
@@ -1369,6 +1369,13 @@ ul {
         }
 
         /*  */
+
+
+        .start-text {
+            height: 100%;
+            align-items: center;
+            display: flex;
+        }
 
 
 
