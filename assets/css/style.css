@@ -1253,6 +1253,8 @@ ul {
 /* footer  section css end */
 
 
+/* mobile screen card css start */
+
 .hometable-mobile {
     width: calc(100% - 20px);
     margin: 0 auto;
@@ -1323,6 +1325,30 @@ ul {
     .hometable-mobile-bonus {
     margin-top: 17px;
     }
+
+    /* mobile screen card css end */
+
+
+    /*  */
+
+    .bonus-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        }
+        
+        .bonus-table th, .bonus-table td {
+        border: 1px solid #fff;
+        padding: 12px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        }
+        table.bonus-table tr th {
+        color: #f7ad07;
+        }
+
+        /*  */
 
 
 

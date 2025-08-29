@@ -144,6 +144,14 @@
       display: none;
   }
 
+  .bonus-table {
+    min-width: 1000px;
+}
+
+.bonus-section .container .table-div {
+  overflow-x: auto;
+  }
+
     
 
      
@@ -316,6 +324,10 @@
         min-height: 100px;
         height: 120px;
       }
+
+      .game_content_image {
+        height: 320px;
+    }
 
 }
 
