@@ -1,6 +1,16 @@
+
+@media screen and (max-width:1024px){
+  .review-btn {
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 9px 18px;
+    font-size: 14px;
+
+}
+}
+
+
 @media screen and (max-width:991px) {
-
-
     .menu {
         position: fixed;
         top: 0;
@@ -153,8 +163,6 @@
   }
 
     
-
-     
     }
     
 
@@ -299,6 +307,12 @@
   display: block;
 }
 
+.banner_box h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
 }
 
 
@@ -348,7 +362,7 @@
 
 .second_heading {
   font-size: 2.1rem;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 
 .para {
@@ -363,6 +377,17 @@
 .third-heading {
   font-size: 1.2rem;
   line-height: 1.5rem;
+}
+
+.footer_pages ul li a {   
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+}
+
+.banner_box h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2.5rem;
 }
 
 }
