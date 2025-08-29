@@ -171,7 +171,7 @@ ul {
     cursor: pointer;
     margin: auto 0;
     z-index: 60;
-    background: url("../image/menu.png") no-repeat center / contain;
+    background: url('../images/menu.png') no-repeat center / contain;
 }
 
 
@@ -234,7 +234,7 @@ ul {
 
 .menu-close {
     display: none;
-    background: url(../image/close.png) no-repeat center / cover;
+    background: url('../images/close.png') no-repeat center / cover;
 }
 
 .header.white_bg .menu-toggle {
@@ -242,11 +242,11 @@ ul {
 }
 
 .logo {
-    background-image: url(../images/site-logo.png);
+    background-image: url('../images/logo.png');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 80px;
-    width: 90px;
+    height: 90px;
+    width: 100px;
     display: inline-block;
     background-position: left;
 }
@@ -1011,7 +1011,7 @@ ul {
 
 
   .deposit_img {
-    height: 360px;
+    height: 410px;
     background-image: url('../images/deposite-imge.png');
     background-size: auto;
     background-position: center;
