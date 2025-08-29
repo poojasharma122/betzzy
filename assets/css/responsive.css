@@ -1,0 +1,203 @@
+@media screen and (max-width:991px) {
+
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 50px;
+        background-color: black;
+        transform: translateX(-100%);
+        transition: all 0.3s linear;
+        z-index: 100;
+        color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .menuToggle .menu {
+        transform: translateX(0);
+        justify-content: flex-start;
+    }
+
+    .header.white_bg .menu-link {
+        color: #fff;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block;
+        text-align: end;
+        z-index: 55;
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+
+    .top_logo {
+        display: none;
+    }
+
+    .nav .logo {
+        display: block;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .account_img {
+        min-height: 180px;
+        height: 200px;
+        margin-top: 2rem;
+      }
+      .account_inner_text {
+        padding: 20px 10px 10px 10px;
+      }
+
+      .deposit_img {
+        min-height: 180px;
+        height: 200px;
+        margin-top: 2rem;
+      }
+      .deposit_inner_text {
+        padding: 20px 10px 10px 10px;
+      }
+      .deposit_inner_text h2 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+      }
+      .deposit_inner_text .para,
+      .deposit_list li {
+        font-size: 0.98rem;
+      }
+}
+
+
+
+@media screen and (max-width:767px) {
+
+    .after_banner_image {
+        height: 350px;
+    }
+
+    .menu-link {
+    padding: 4px;
+    font-size: 16px;
+}
+
+.after_banner_text {
+    padding: 0;
+}
+
+.hero-content p {
+    margin-bottom: 0px;
+}
+
+.promo-img, .promo-text {
+    height: 80px !important;
+}
+
+.col-md-4, .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.review-card {
+    height: 250px;
+}
+.review-title h3 {
+    font-size: 1.1rem;
+}
+
+.account_section {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
+  .account_img {
+    min-height: 140px;
+    height: 160px;
+    margin-top: 1.5rem;
+  }
+  .account_inner_text h2 {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+  .account_inner_text .para,
+  .account_list li {
+    font-size: 0.98rem;
+  }
+  .deposit_img {
+    min-height: 140px;
+    height: 160px;
+    margin-top: 1.5rem;
+  }
+  .deposit_inner_text h2 {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+  .deposit_inner_text .para,
+  .deposit_list li {
+    font-size: 0.96rem;
+  }
+  .deposit_section {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
+
+  .rg-section {
+    padding: 1.2rem 0.7rem;
+}
+.rg-section h2 {
+    font-size: 1.5rem;
+}
+
+.rg-list li {
+    flex-wrap: wrap;
+}
+
+}
+
+
+@media screen and (max-width:575px) {
+
+    .pt-8 {
+        padding-top: 2.5rem;
+    }
+
+    .pb-8 {
+        padding-bottom: 2.5rem;
+    }
+
+    .after_banner_image {
+        height: 250px;
+    }
+
+    .deposit_section {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+      .deposit_img {
+        min-height: 100px;
+        height: 120px;
+      }
+
+}

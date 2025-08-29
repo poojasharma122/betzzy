@@ -1,0 +1,1190 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Red+Rose:wght@300..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Red+Rose:wght@300..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Anton", sans-serif;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 0.6px;
+}
+
+.pt-8 {
+    padding-top: 5rem;
+}
+
+.pb-8 {
+    padding-bottom: 5rem;
+}  
+
+.ptb-8{
+    padding-left: 5rem;
+    padding-bottom: 5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: #18003a;
+}
+
+
+img {
+    width: 100%;
+}
+
+.aoshidden {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    /* color:; */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.aoshidden {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.figma_heading {
+    color: #111111;
+    font-weight: 700;
+    line-height: 3.125rem;
+    font-size: 2.652rem;
+}
+
+.para {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.125rem;
+    font-style: normal;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* global css end here */
+
+
+.title {
+    letter-spacing: 1px;
+    width: 575px;
+    font-weight: 400;
+    background: -webkit-linear-gradient(#fcb503 46%, #e5881b 54%, #fcb11a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 99;
+}
+
+
+.second_heading{
+    letter-spacing: 1px;
+    font-weight: 400;
+    background: -webkit-linear-gradient(#fcb503 46%, #e5881b 54%, #fcb11a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 99;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.banner_text p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Nunito";
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+}
+
+.border{
+    background: linear-gradient(to bottom, rgba(254, 215, 125, 1) 0%, rgba(247, 172, 4, 1) 100%);
+}
+
+.control-img i {
+    background: -webkit-linear-gradient(#e26aca 0%, #943285 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Header CSS Start */
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: all 0.3s ease;
+    padding: 0.9375rem 0;
+}
+
+.header.fixed_header {
+    background-color: #18003a;
+    /* box-shadow: #020202d7 0px 2px 10px; */
+    box-shadow: rgb(100 100 111 / 60%) 0px 7px 29px 0px;
+
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.brand {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.menu-toggle {
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: auto 0;
+    z-index: 60;
+    background: url("../image/menu.png") no-repeat center / contain;
+}
+
+
+
+.menu {
+    display: flex;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-link:hover {
+    color: #ff9c19;
+}
+
+.menu-item {
+    margin: 0;
+}
+
+.menu-link.active,
+.menu-link:hover {
+    color: #ff9c19;
+}
+
+.menu-link {
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+.menu-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-link.active::after,
+.menu-link:hover::after {
+    transform: scaleX(0.9);
+}
+
+.menu-close {
+    display: none;
+    background: url(../image/close.png) no-repeat center / cover;
+}
+
+.header.white_bg .menu-toggle {
+    filter: invert(1);
+}
+
+.logo {
+    background-image: url(../images/site-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 90px;
+    display: inline-block;
+    background-position: left;
+}
+
+/* Header CSS End */
+
+
+/* hero sec */
+.hero-imgWrap {
+    height: 100%;
+}
+
+.hero-img {
+    background-image: url("../images/seconf-hero-banner.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero-section {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    padding-block: 3rem;
+    max-width: 806px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 4.125rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    line-height: 5.125rem;
+}
+
+.hero-content h1 span {
+    background: linear-gradient(0deg, #ff9c19 40%, #ffdd2d 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main-btn {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: #ffc02e;
+    cursor: pointer;
+    font-weight: 600;
+    z-index: 5;
+    transition: all .4s ease-in-out;
+    background-color: transparent;
+    border: 1px solid #ffc02e;
+    overflow: hidden;
+}
+
+.main-btn:hover {
+    background-color: #ffc02e;
+    border-color: transparent;
+    color: #000;
+
+}
+
+.socialCasino_inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.sec_title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: start;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #ffc02e;
+}
+
+.socialCasino_innerSec {
+    width: 31%;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.socialCasino_innerSec:hover .socialCasino_content {
+    transform: translateY(0px);
+    overflow: hidden;
+    padding: 30px 0;
+    background: -webkit-linear-gradient(bottom, rgba(255, 0, 0, 0), rgb(255, 192, 46));
+    background: -o-linear-gradient(bottom, rgba(255, 0, 0, 0), rgb(255, 192, 46));
+    background: -moz-linear-gradient(bottom, rgba(255, 0, 0, 0), rgb(255, 192, 46));
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgb(255, 192, 46));
+}
+
+.socialCasino_innerSec:hover .socialCasino_content h4 {
+    margin-bottom: 1rem;
+}
+
+.socialCasino_imgwrap {
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.socialCasino_img:hover {
+    transform: scale(1.1);
+}
+
+.socialCasino_img {
+    background: url("../images/social-casino-games-img1.png") repeat scroll #282828;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    border-radius: 4px;
+}
+
+.socialCasino_img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0 0 0 / 50%);
+    z-index: 2;
+    border-radius: 4px;
+}
+
+.socialCasino_content {
+    bottom: 0;
+    position: absolute;
+    transform: translateY(3.5rem);
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    transition: 0.3s ease-in-out;
+}
+
+.socialCasino_content h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.socialCasino_btn {
+    padding: 10px 24px;
+}
+
+.socialCasino_btn:hover {
+    background-color: #fff;
+    color: #ffc02e;
+    border-color: transparent;
+}
+
+/* hero section css end */
+
+
+/* betting site section css start */
+
+.betting-sites-table thead tr {
+    background: linear-gradient(90deg, #fcb503 46%, #e5881b 54%, #fcb11a);
+    color: #111;
+}
+
+/* betting site section css end */
+
+
+
+.comparison-table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  .comparison-table thead {
+    background: linear-gradient(90deg, #fcb503 46%, #e5881b 54%, #fcb11a);
+    color: #fff;
+  }
+  .comparison-table th {
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    width: 80px;
+}
+  .site-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  }
+  /* .site-logo {
+    flex: 1;
+    font-weight: bold;
+    font-size: 20px;
+  } */
+
+  .betting_site_logo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 80px;
+    background-color: #fff;
+}
+  .site-details {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+  }
+  .site-details div {
+    padding: 5px 10px;
+  }
+  .site-rating {
+    flex: 1;
+    text-align: center;
+    color: #28a745;
+    font-size: 16px;
+  }
+  .site-action {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .site-details-fifth {
+    width: 100px;
+}
+
+.site-details-first {
+    width: 230px;
+}
+
+.site-details-second {
+    width: 40px;
+}
+
+.site-details-third {
+    width: 110px;
+}
+
+.site-details-forth {
+    width: 200px;
+}
+
+
+/* Top Betting Sites in Ireland css start */
+
+.batting_card_inner {
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+    /* background-color: #e26aca; */
+}
+
+.batting_card_inner:hover {
+    border: 2px solid #e26aca;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 24px rgba(252,181,3,0.18);
+}
+
+.batting_card_inner h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.batting_card_inner p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Top Betting Sites in Ireland css end */
+
+
+
+/* Featured Promotions section css start */
+
+.promo-card {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.promo-img {
+    width: 100%;
+    height: 120px;
+    border-radius: 12px;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: filter 0.3s;
+}
+.promo-img-paddypower {
+    background-image: url('../images/Paddy_Power_logo.png');
+}
+.promo-img-boylesports {
+    background-image: url('../images/game-logo2.png');
+}
+.promo-img-bet365 {
+    background-image: url('../images/Bet365_Logo.svg.png');
+}
+.promo-img-ladbrokes {
+    background-image: url('../images/game-logo4.png');
+}
+.promo-img-888sport {
+    background-image: url('../images/game-logo5.png');
+}
+.promo-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: rgba(24,0,58,0.95);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    border-radius: 12px;
+    transition: opacity 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+    flex-direction: column;
+    padding: 10px;
+}
+.promo-text span {
+    font-size: 15px;
+    font-weight: 400;
+}
+.promo-card:hover .promo-text {
+    opacity: 1;
+}
+.promo-card:hover .promo-img {
+    filter: blur(2px) brightness(0.7);
+}
+
+/* Featured Promotions section css end  */
+
+
+
+/* How We Rank Betting Sites section css start */
+
+.how_we_rank_text ul li {
+    padding-left: 30px;
+    position: relative;
+}
+
+.how_we_rank_text ul li::before {
+    position: absolute;
+    content: '.';
+    color: #fcb11a;
+    font-size: 50px;
+    top: -39px;
+    left: -3px;
+}
+
+.how_we_rank_img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+/* How We Rank Betting Sites section css end */
+
+
+
+
+
+/* Quick Links to Our Reviews section css start */
+
+
+.review-card {
+    position: relative;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px #fcb11a45;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 24px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.review-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(24,0,58,0.18);
+}
+.review-paddypower {
+    background-image: url('../images/game-logo1.png');
+}
+.review-boylesports {
+    background-image: url('../images/game-logo2.png');
+}
+.review-bet365 {
+    background-image: url('../images/Bet365_Logo.svg.png');
+}
+.review-ladbrokes {
+    background-image: url('../images/game-logo4.png');
+}
+.review-888sport {
+    background-image: url('../images/game-logo5.png');
+}
+.review-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24,0,58,0.7);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+    z-index: 2;
+}
+.review-card:hover .review-overlay {
+    opacity: 1;
+}
+.review-btn {
+    background: #fcb11a;
+    color: #18003a;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 12px 36px;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(24,0,58,0.18);
+    transition: background 0.2s, color 0.2s;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+.review-btn:hover {
+    background: #fff;
+    color: #e26aca;
+}
+.review-title {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
+.review-title h3 {
+    color: #fff;
+    text-shadow: 0 2px 8px #000;
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+/* Quick Links to Our Reviews section css end */
+
+
+
+/* footer section css start */
+
+.disclaimer_section {
+    
+}
+
+.footer_heading {
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+/* .footer_section {
+    background-color: #1c1c1b91;
+} */
+
+.footer_page_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social_icon {
+    max-width: 9.625rem;
+    margin: 0 auto;
+}
+
+.social_icon ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 9.375rem;
+}
+
+.social_icon li a {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.375rem;
+    transition: all 0.2s linear;
+    padding: 0.625rem;
+    fill: #fff;
+}
+
+.social_icon li a:hover {
+    transform: translateY(-4px);
+}
+
+.ssl_inner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 55px;
+}
+
+.footer_page {
+    border-bottom: 1px solid #fff;
+}
+
+/* footer section css end */
+
+
+
+/* game section css start */
+
+
+.game_content_image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 496px;
+}
+
+.game_content .row .col-md-6{
+    padding: 0;
+}
+
+.game_inner_content ul li {
+    padding-left: 30px;
+    position: relative;
+}
+
+.game_inner_content ul li::before {
+    position: absolute;
+    content: '.';
+    font-size: 60px;
+    color: #fcb11a;
+    top: -50px;
+    left: -2px;
+}
+
+.game_inner_content {
+    padding: 25px 20px 0px 20px;
+}
+
+.game_inner_content h5 {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+/* game section css end */
+
+
+
+/* choose licesend section css start */
+
+.choose_licensed {
+    background-color: #0b001b;
+    margin-top: 5rem;
+}
+
+.choose_licensed_img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.choose_licensed_inner_text ul li {
+    position: relative;
+    padding-left: 30px;
+}
+
+.choose_licensed_inner_text ul li::before {
+    position: absolute;
+    content: '.';
+    color: #fcb11a;
+    font-size: 60px;
+    top: -50px;
+    left: 0;
+}
+
+/* choose licesend section css end */
+
+
+/* account section css start */
+.account_section {
+    border-radius: 12px;
+    /* margin-top: 3rem;
+    margin-bottom: 3rem; */
+  }
+  .account_inner_text {
+    padding: 30px 20px 20px 20px;
+  }
+  .account_inner_text h2 {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+  .account_inner_text .para {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  .account_list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+  }
+  .account_list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.1rem;
+    position: relative;
+    padding-left: 32px;
+    color: #fff;
+    font-size: 1.125rem;
+  }
+  .account_bullet {
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background: #fcb11a;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 12px;
+  }
+  .account_age {
+    color: #fcb11a;
+    font-size: 0.98em;
+    margin-left: 4px;
+  }
+  .account_note {
+    color: #fcb11a;
+    font-size: 1.05rem;
+    margin-top: 2rem;
+  }
+  .account_img {
+    /* min-height: 220px; */
+    height: 386px;
+    background-image: url('../images/account-image-remove.png');
+    background-size: auto;
+    background-position: center;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+  }
+  
+/* account section css end */
+
+
+
+/* reposite fund section css start */
+.deposit_section {
+    border-radius: 12px;
+    background: #0b001b;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+  }
+  .deposit_inner_text {
+    padding: 30px 20px 20px 20px;
+  }
+  .deposit_inner_text h2 {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+  .deposit_inner_text .para {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  .deposit_list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+  }
+  .deposit_list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.1rem;
+    position: relative;
+    padding-left: 32px;
+    color: #fff;
+    font-size: 1.125rem;
+  }
+  .deposit_bullet {
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background: #fcb11a;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 12px;
+}
+  .deposit_note {
+    color: #fcb11a;
+    font-size: 1.05rem;
+    margin-top: 2rem;
+  }
+
+
+  .deposit_img {
+    height: 360px;
+    background-image: url('../images/deposite-imge.png');
+    background-size: auto;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+    width: 100%;
+    background-repeat: no-repeat;
+}
+  
+/* reposite fund section css end */
+
+
+.start-img {
+    height: 70px;
+    width: 70px;
+    background: -webkit-linear-gradient(to bottom, rgba(254, 215, 125, 1) 0%, rgba(247, 172, 4, 1) 100%) !important;
+    background: -o-linear-gradient(to bottom, rgba(254, 215, 125, 1) 0%, rgba(247, 172, 4, 1) 100%);
+    background: -moz-linear-gradient(to bottom, rgba(254, 215, 125, 1) 0%, rgba(247, 172, 4, 1) 100%);
+    background: linear-gradient(to bottom, rgba(254, 215, 125, 1) 0%, rgba(247, 172, 4, 1) 100%);
+    padding: 14px 17px;
+    filter: drop-shadow(0 0px 20px rgba(101, 40, 193, 0.5));
+    box-shadow: 0px 0px 4px 1px rgba(247, 172, 4, 0.8);
+    border: 1px solid rgba(224, 180, 6, 0.7);
+}
+
+.start-img:hover {
+    background: -webkit-linear-gradient(to bottom, rgba(223, 103, 198, 1) 0%, rgba(152, 51, 134, 1) 100%) !important;
+    background: -o-linear-gradient(to bottom, rgba(223, 103, 198, 1) 0%, rgba(152, 51, 134, 1) 100%);
+    background: -moz-linear-gradient(to bottom, rgba(223, 103, 198, 1) 0%, rgba(152, 51, 134, 1) 100%);
+    background: linear-gradient(to bottom, rgba(223, 103, 198, 1) 0%, rgba(152, 51, 134, 1) 100%);
+    box-shadow: 0px 0px 4px 1px rgba(152, 51, 134, 0.9);
+    border: 1px solid rgba(226, 71, 237, 0.5);
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    filter: drop-shadow(0 0px 20px rgba(152, 51, 134, 0.6));
+}
+
+.start-img img {
+    background: -webkit-linear-gradient(#e26aca 0%, #943285 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0b001b;
+}
+
+.start-img:hover img {
+    background: -webkit-linear-gradient(#ffd370 0%, #f7ad07 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+}   
+
+
+.bet_reponsibly {
+    background-color: #0b001b;
+}
+
+
+
+/* privacy page css start */
+
+.personal_banner {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 28.625rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.personal_banner::before {
+    content: '';
+    position: absolute;
+    background: rgba(0 0 0 / 60%);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.banner_box {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.banner_box h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 3.125rem;
+}
+
+
+.rg-section {
+    /* background: #fff; */
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(101,40,193,0.07);
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+}
+.rg-section h2,
+.rg-section h3 {
+    color: #f7ad07;
+    font-weight: 500;
+}
+.rg-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+.rg-section h3 {
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+/* .rg-section .para {
+    color: #222;
+    font-size: 1.08rem;
+    margin-bottom: 1rem;
+} */
+.rg-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+.rg-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.7rem;
+    font-size: 1.05rem;
+    color: #fff;
+}
+.rg-bullet {
+    display: inline-block;
+    min-width: 8px;
+    height: 8px;
+    margin-right: 12px;
+    margin-top: 9px;
+    background: linear-gradient(135deg, #ffd370 0%, #f7ad07 100%);
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(247,172,4,0.18);
+}
+.rg-section a {
+    color: #e26aca;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.rg-section a:hover {
+    color: #f7ad07;
+}
+
+/* privacy page css start */
+
+
+
+
