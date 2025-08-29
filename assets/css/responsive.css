@@ -87,7 +87,69 @@
       .deposit_list li {
         font-size: 0.98rem;
       }
-}
+
+      /* chat first */
+
+        .site-row {
+        flex-wrap: wrap;
+        text-align: center;
+      }
+    
+      /* .betting_site_logo {
+        width: 120px;
+        height: 70px;
+        margin-bottom: 10px;
+      } */
+
+      .betting_site_logo {
+        height: 70px;
+        margin-bottom: 10px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+      .site-details {
+        flex: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: #fff;
+      }
+    
+      .site-details div {
+        width: 45%;
+        margin: 5px 0;
+        font-size: 13px;
+      }
+    
+      .button {
+        width: 100%;
+        margin-top: 10px;
+      }
+    
+      .review-btn {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 6px;
+        background: linear-gradient(90deg, #fcb503 46%, #e5881b 54%, #fcb11a);
+        color: #fff;
+        font-size: 14px;
+      } 
+
+
+      .hometable-mobile-card {
+        display: none;
+    }
+
+    .comparison-table {
+      display: none;
+  }
+
+    
+
+     
+    }
+    
+
 
 
 
@@ -181,6 +243,54 @@
   height: 300px;
 }
 
+/* chat first */
+
+ .site-row {
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.betting_site_logo {
+  width: 100px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.site-details {
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-details div {
+  width: 100%;
+  font-size: 12px;
+  padding: 4px 0;
+}
+
+.button {
+  margin-top: 12px;
+}
+
+.review-btn {
+  width: 100%;
+  text-align: center;
+} 
+
+
+.hometable-mobile-card {
+  display: block;
+}
+
+.site-row {
+  display: none;
+}
+
+
+.hometable-mobile {
+  display: block;
+}
+
 }
 
 
@@ -229,4 +339,19 @@
   font-size: 2.1rem;
   line-height: 3rem;
 }
+
+.para {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.third-heading {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
 }
