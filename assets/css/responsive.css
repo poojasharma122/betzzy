@@ -435,7 +435,8 @@ padding-top: 32px;
     font-size: 12px;
 }
 .hometable-mobile-flex {
-grid-template-columns: 1fr 1.4fr;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 10px;
 }
 .hometable-mobile-content p {
 padding-bottom: 3px;
