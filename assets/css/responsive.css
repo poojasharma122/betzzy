@@ -257,11 +257,46 @@
     flex-wrap: wrap;
 }
 
-.hero-content h1 {
-  font-size: 3.125rem;
-  line-height: 4.125rem;
+.aoshidden .hero-content h1 {
+font-size: 28px;
+line-height: normal;
+margin-bottom: 6px;
 }
-
+.aoshidden .hero-content p {
+margin-bottom: 0px;
+font-size: 14px;
+line-height: normal;
+}
+.aoshidden .hero-content {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.top_betting_site_heading h2 {
+    font-size: 28px;
+}
+.aoshidden .hero-img {
+position: absolute;
+top: 0;
+z-index: -1;
+height: 100%;
+left: 0;
+}
+.aoshidden .hero-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000085;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+section.top_betting_site {
+padding-top: 32px;
+}
+.aoshidden .row.g-3 {
+    position: relative;
+}
 .choose_licensed_img {
   height: 300px;
 }
@@ -396,5 +431,22 @@
   font-weight: 800;
   line-height: 2.5rem;
 }
+.hometable-mobile-logo p {
+    font-size: 12px;
+}
+.hometable-mobile-flex {
+grid-template-columns: 1fr 1.4fr;
+}
+.hometable-mobile-content p {
+padding-bottom: 3px;
+}
 
+.hometable-mobile-card .para {
+font-size: 12px;
+line-height: normal;
+}  
+.hometable-mobile-logo img {
+width: 126px;
+height: 78px;
+}
 }
