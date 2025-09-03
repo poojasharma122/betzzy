@@ -586,7 +586,7 @@ ul {
     transition: filter 0.3s;
 }
 .promo-img-paddypower {
-    background-image: url('../images/game-logo1.png');
+    background-image: url('../images/paddy-power.png');
 }
 .promo-img-boylesports {
     background-image: url('../images/game-logo2.png');
@@ -686,9 +686,9 @@ ul {
     box-shadow: 0 12px 32px rgba(24,0,58,0.18);
 }
 .review-paddypower {
-    background-image: url('../images/game-logo1.png');
+    background-image: url('../images/paddy-power.png');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #18003a;
 }
