@@ -92,7 +92,7 @@
   }
 
   .account_inner_text {
-    padding: 20px 10px 10px 10px;
+    padding: 0px 10px 10px 10px;
   }
 
   .deposit_img {
@@ -345,6 +345,10 @@
     line-height: 3rem;
   }
 
+  .py-7 {
+    padding: 2.375rem 0;
+}
+
 }
 
 
@@ -453,4 +457,11 @@
     width: 126px;
     height: 78px;
   }
+
+  .second_heading2 {
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    
+}
 }
