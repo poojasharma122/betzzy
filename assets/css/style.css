@@ -1528,3 +1528,8 @@ table.bonus-table tr th {
 .bg_dark{
     background-color: #000;
 }
+
+.banner_box {
+    z-index: 2;
+    position: relative;
+}
