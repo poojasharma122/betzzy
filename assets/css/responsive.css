@@ -1,245 +1,226 @@
-
 @media screen and (max-width:1200px) {
-        .second-table-container {
-            min-width: 1200px;
-            }
-            
-            .table-container {
-            overflow-x: scroll;
-            }
+  .second-table-container {
+    min-width: 1200px;
+  }
+
+  .table-container {
+    overflow-x: scroll;
+  }
 
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1024px) {
   .review-btn {
     font-weight: 500;
     border-radius: 15px;
     padding: 9px 18px;
     font-size: 14px;
 
-}
+  }
 }
 
 
 @media screen and (max-width:991px) {
-    .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        padding: 50px;
-        background-color: black;
-        transform: translateX(-100%);
-        transition: all 0.3s linear;
-        z-index: 100;
-        color: #fff;
-        flex-direction: column;
-        justify-content: center;
-        overflow: hidden;
-    }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    background-color: black;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+    z-index: 100;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
 
-    .menuToggle .menu {
-        transform: translateX(0);
-        justify-content: flex-start;
-    }
+  .menuToggle .menu {
+    transform: translateX(0);
+    justify-content: flex-start;
+  }
 
-    .header.white_bg .menu-link {
-        color: #fff;
-    }
+  .header.white_bg .menu-link {
+    color: #fff;
+  }
 
-    .menu ul {
-        flex-direction: column;
-    }
+  .menu ul {
+    flex-direction: column;
+  }
 
-    .menu-toggle {
-        display: block;
-    }
-
-    .menu-close {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        display: block;
-        text-align: end;
-        z-index: 55;
-        height: 1.6rem;
-        width: 1.6rem;
-    }
-
-    .top_logo {
-        display: none;
-    }
-
-    .nav .logo {
-        display: block;
-    }
-
-    .nav {
-        justify-content: space-between;
-    }
-
-    .col-md-4 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .account_img {
-        height: 350px;
-        margin-top: 2rem;
-      }
-      .account_inner_text {
-        padding: 20px 10px 10px 10px;
-      }
-
-      .deposit_img {
-        min-height: 180px;
-        height: 200px;
-        margin-top: 2rem;
-      }
-      .deposit_inner_text {
-        padding: 20px 10px 10px 10px;
-      }
-      .deposit_inner_text h2 {
-        font-size: 1.5rem;
-        line-height: 1.8rem;
-      }
-      .deposit_inner_text .para,
-      .deposit_list li {
-        font-size: 0.98rem;
-      }
-
-      /* chat first */
-
-        /* .site-row {
-        flex-wrap: wrap;
-        text-align: center;
-      }
-    
-      
-
-      .betting_site_logo {
-        height: 70px;
-        margin-bottom: 10px;
-        max-width: 90%;
-        margin: 0 auto;
-    }
-    
-      .site-details {
-        flex: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-        color: #fff;
-      }
-    
-      .site-details div {
-        width: 45%;
-        margin: 5px 0;
-        font-size: 13px;
-      }
-    
-      .button {
-        width: 100%;
-        margin-top: 10px;
-      }
-    
-      .review-btn {
-        display: inline-block;
-        padding: 8px 14px;
-        border-radius: 6px;
-        background: linear-gradient(90deg, #fcb503 46%, #e5881b 54%, #fcb11a);
-        color: #fff;
-        font-size: 14px;
-      }  */
+  .menu-toggle {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 
 
-      .hometable-mobile-card {
-        display: none;
-    }
+  .menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    text-align: end;
+    z-index: 55;
+    height: 1.6rem;
+    width: 1.6rem;
+  }
 
-    .comparison-table {
-      display: none;
+  .top_logo {
+    display: none;
+  }
+
+  .nav .logo {
+    display: block;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .account_img {
+    height: 350px;
+    margin-top: 2rem;
+  }
+
+  .account_inner_text {
+    padding: 20px 10px 10px 10px;
+  }
+
+  .deposit_img {
+    min-height: 180px;
+    height: 200px;
+    margin-top: 2rem;
+  }
+
+  .deposit_inner_text {
+    padding: 20px 10px 10px 10px;
+  }
+
+  .deposit_inner_text h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .deposit_inner_text .para,
+  .deposit_list li {
+    font-size: 0.98rem;
+  }
+
+
+  .hometable-mobile-card {
+    display: none;
+  }
+
+  .comparison-table {
+    display: none;
   }
 
   .bonus-table {
     min-width: 1000px;
-}
-
-.bonus-section .container .table-div {
-  overflow-x: auto;
   }
 
-    
-    }
-    
+  .bonus-section .container .table-div {
+    overflow-x: auto;
+  }
+
+
+}
+
 
 
 
 
 @media screen and (max-width:767px) {
+  .home_banner {
+    padding-top: 90px;
+  }
 
-    .after_banner_image {
-        height: 350px;
-    }
+  .table-container {
+    overflow-x: hidden;
+  }
 
-    .menu-link {
+  .after_banner_image {
+    height: 350px;
+  }
+
+  .menu-link {
     padding: 4px;
     font-size: 22px;
-}
+  }
 
-.after_banner_text {
+  .after_banner_text {
     padding: 0;
-}
+  }
 
-.hero-content p {
+  .hero-content p {
     margin-bottom: 0px;
-}
+  }
 
-.promo-img, .promo-text {
+  .promo-img,
+  .promo-text {
     height: 100px !important;
-}
+  }
 
-.col-md-4, .col-sm-6 {
+  .col-md-4,
+  .col-sm-6 {
     flex: 0 0 100%;
     max-width: 100%;
-}
-.review-card {
-    height: 250px;
-}
-.review-title h3 {
-    font-size: 1.1rem;
-}
+  }
 
-.account_section {
+  .review-card {
+    height: 250px;
+  }
+
+  .review-title h3 {
+    font-size: 1.1rem;
+  }
+
+  .account_section {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     padding: 0;
   }
+
   .account_img {
     height: 350px;
     margin-top: 1.5rem;
   }
+
   .account_inner_text h2 {
     font-size: 1.3rem;
     line-height: 1.6rem;
   }
+
   .account_inner_text .para,
   .account_list li {
     font-size: 0.98rem;
   }
+
   .deposit_img {
     min-height: 140px;
     height: 160px;
     margin-top: 1.5rem;
   }
+
   .deposit_inner_text h2 {
     font-size: 1.3rem;
     line-height: 1.6rem;
   }
+
   .deposit_inner_text .para,
   .deposit_list li {
     font-size: 0.96rem;
   }
+
   .deposit_section {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -248,40 +229,46 @@
 
   .rg-section {
     padding: 1.2rem 0.7rem;
-}
-.rg-section h2 {
+  }
+
+  .rg-section h2 {
     font-size: 1.5rem;
-}
+  }
 
-.rg-list li {
+  .rg-list li {
     flex-wrap: wrap;
-}
+  }
 
-.aoshidden .hero-content h1 {
-font-size: 28px;
-line-height: normal;
-margin-bottom: 6px;
-}
-.aoshidden .hero-content p {
-margin-bottom: 0px;
-font-size: 14px;
-line-height: normal;
-}
-.aoshidden .hero-content {
+  .aoshidden .hero-content h1 {
+    font-size: 28px;
+    line-height: normal;
+    margin-bottom: 6px;
+  }
+
+  .aoshidden .hero-content p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .aoshidden .hero-content {
     padding-top: 6px;
     padding-bottom: 6px;
-}
-.top_betting_site_heading h2 {
+  }
+
+  .top_betting_site_heading h2 {
     font-size: 28px;
-}
-.aoshidden .hero-img {
-position: absolute;
-top: 0;
-z-index: -1;
-height: 100%;
-left: 0;
-}
-.aoshidden .hero-img::before {
+  }
+
+  .aoshidden .hero-img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    left: 0;
+  }
+
+  .aoshidden .hero-img::before {
     content: "";
     position: absolute;
     top: 0;
@@ -290,164 +277,180 @@ left: 0;
     width: 100%;
     height: 100%;
     border-radius: 10px;
-}
-section.top_betting_site {
-padding-top: 32px;
-}
-.aoshidden .row.g-3 {
+  }
+
+  section.top_betting_site {
+    padding-top: 32px;
+  }
+
+  .aoshidden .row.g-3 {
     position: relative;
-}
-.choose_licensed_img {
-  height: 300px;
-}
+  }
 
-/* chat first */
+  .choose_licensed_img {
+    height: 300px;
+  }
 
- .site-row {
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
+  /* chat first */
 
-.betting_site_logo {
-  width: 100px;
-  height: 60px;
-  margin-bottom: 10px;
-}
+  .site-row {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
-.site-details {
-  flex-direction: column;
-  align-items: center;
-}
+  .betting_site_logo {
+    width: 100px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
 
-.site-details div {
-  width: 100%;
-  font-size: 12px;
-  padding: 4px 0;
-}
+  .site-details {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.button {
-  margin-top: 12px;
-}
+  .site-details div {
+    width: 100%;
+    font-size: 12px;
+    padding: 4px 0;
+  }
 
-.review-btn {
-  width: 100%;
-  text-align: center;
-} 
+  .button {
+    margin-top: 12px;
+  }
 
-
-.hometable-mobile-card {
-  display: block;
-}
-
-.site-row {
-  display: none;
-}
+  .review-btn {
+    width: 100%;
+    text-align: center;
+  }
 
 
-.hometable-mobile {
-  display: block;
-}
+  .hometable-mobile-card {
+    display: block;
+  }
 
-.banner_box h2 {
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 3rem;
-}
+  .site-row {
+    display: none;
+  }
+
+
+  .hometable-mobile {
+    display: block;
+  }
+
+  .banner_box h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+  }
 
 }
 
 
 @media screen and (max-width:575px) {
 
-    .pt-8 {
-        padding-top: 2.5rem;
-    }
+  .pt-8 {
+    padding-top: 2.5rem;
+  }
 
-    .pb-8 {
-        padding-bottom: 2.5rem;
-    }
+  .pb-8 {
+    padding-bottom: 2.5rem;
+  }
 
-    .after_banner_image {
-        height: 250px;
-    }
+  .after_banner_image {
+    height: 250px;
+  }
 
-    .deposit_section {
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-      }
-      .deposit_img {
-        height: 360px;
-    }
+  .deposit_section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
 
-      .game_content_image {
-        height: 320px;
-    }
+  .deposit_img {
+    height: 360px;
+  }
 
+  .game_content_image {
+    height: 320px;
+  }
+
+  .top_sec_wrapper .title {
+    font-size: 21px;
+  }
+
+  .top_sec_wrapper .text-white {
+    font-size: 14px;
+    line-height: 1.2;
+  }
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:425px) {
   .hero-content h1 {
     font-size: 2.125rem;
     margin-bottom: 1rem;
     line-height: 3.125rem;
+  }
+
+  .hero-img {
+    height: 380px;
+    width: 100%;
+  }
+
+  .choose_licensed {
+    margin-top: 3rem;
+  }
+
+  .second_heading {
+    font-size: 1.6rem;
+    line-height: 1.4;
 }
 
-.hero-img {
-  height: 380px;
-  width: 100%;
-}
+  .para {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.2rem;
+    letter-spacing: 1px;
+  }
 
-.choose_licensed {
-  margin-top: 3rem;
-}
+  .third-heading {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 
-.second_heading {
-  font-size: 2.1rem;
-  line-height: 2.3rem;
-}
+  .footer_pages ul li a {
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+  }
 
-.para {
-  color: #fff;
-  font-weight: 400;
-  font-size: 1rem;
-  font-style: normal;
-  line-height: 1.2rem;
-  letter-spacing: 1px;
-}
+  .banner_box h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+  }
 
-.third-heading {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-}
-
-.footer_pages ul li a {   
-  font-size: 1rem;
-  letter-spacing: 0.2px;
-}
-
-.banner_box h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 2.5rem;
-}
-.hometable-mobile-logo p {
+  .hometable-mobile-logo p {
     font-size: 12px;
-}
-.hometable-mobile-flex {
-  grid-template-columns: 1fr 1.4fr;
-  gap: 10px;
-}
-.hometable-mobile-content p {
-padding-bottom: 3px;
-}
+  }
 
-.hometable-mobile-card .para {
-font-size: 12px;
-line-height: normal;
-}  
-.hometable-mobile-logo img {
-width: 126px;
-height: 78px;
-}
+  .hometable-mobile-flex {
+    grid-template-columns: 1fr 1.4fr;
+    gap: 10px;
+  }
+
+  .hometable-mobile-content p {
+    padding-bottom: 3px;
+  }
+
+  .hometable-mobile-card .para {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  .hometable-mobile-logo img {
+    width: 126px;
+    height: 78px;
+  }
 }

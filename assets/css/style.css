@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Red+Rose:wght@300..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Red+Rose:wght@300..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 h1,
 h2,
 h3,
@@ -8,6 +8,7 @@ h4,
 h5,
 h6 {
     font-family: "Anton", sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 0;
     line-height: 1;
     letter-spacing: 0.6px;
@@ -19,9 +20,9 @@ h6 {
 
 .pb-8 {
     padding-bottom: 5rem;
-}  
+}
 
-.ptb-8{
+.ptb-8 {
     padding-left: 5rem;
     padding-bottom: 5rem;
 }
@@ -34,7 +35,7 @@ h6 {
 }
 
 body {
-    background-color: #18003a;
+    background-color: #000;
 }
 
 
@@ -90,6 +91,7 @@ ul {
 .title {
     letter-spacing: 1px;
     /* width: 575px; */
+    line-height: 1.4;
     font-weight: 400;
     background: -webkit-linear-gradient(#fcb503 46%, #e5881b 54%, #fcb11a);
     -webkit-background-clip: text;
@@ -98,8 +100,8 @@ ul {
 }
 
 
-.second_heading{
-    letter-spacing: 1px;
+.second_heading {
+    letter-spacing: 1.5px;
     font-weight: 400;
     background: -webkit-linear-gradient(#fcb503 46%, #e5881b 54%, #fcb11a);
     -webkit-background-clip: text;
@@ -108,9 +110,23 @@ ul {
     font-size: 2.5rem;
     line-height: 3rem;
 }
+.second_heading2 {
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    z-index: 99;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #000;
+}
 
-.third-heading{
-    letter-spacing: 1px;
+.bg_center_cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.third-heading {
+    letter-spacing: 1.5px;
     font-weight: 400;
     background: -webkit-linear-gradient(#fcb503 46%, #e5881b 54%, #fcb11a);
     -webkit-background-clip: text;
@@ -130,7 +146,7 @@ ul {
     padding-bottom: 30px;
 }
 
-.border{
+.border {
     background: linear-gradient(to bottom, rgba(254, 215, 125, 1) 0%, rgba(247, 172, 4, 1) 100%);
 }
 
@@ -143,19 +159,19 @@ ul {
 
 /* Header CSS Start */
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     z-index: 9999;
     transition: all 0.3s ease;
-    padding: 0.9375rem 0;
+    padding: 0.625rem 0;
+
 }
 
 .header.fixed_header {
-    background-color: #18003a;
-    /* box-shadow: #020202d7 0px 2px 10px; */
+    background-color: #000;
     box-shadow: rgb(100 100 111 / 60%) 0px 7px 29px 0px;
 
 }
@@ -253,11 +269,11 @@ ul {
 }
 
 .logo {
-    background-image: url('../images/unnamed.png');
+    background-image: url('../images/site-logo.png');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 90px;
-    width: 100px;
+    height: 50px;
+    width: 150px;
     display: inline-block;
     background-position: left;
 }
@@ -266,13 +282,49 @@ ul {
 
 
 /* hero sec */
+
+
+.home_banner {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero-imgWrap {
     height: 100%;
 }
 
+
+.top_sec_wrapper {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0 0 0 / 70%);
+    background-blend-mode: multiply;
+}
+
 .hero-img {
-    background-image: url("../images/herobanner.png");
-    height: 500px;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -283,6 +335,7 @@ ul {
 .hero-section {
     position: relative;
     z-index: 1;
+    margin-top: 105px;
 }
 
 .hero-content {
@@ -461,19 +514,21 @@ ul {
     width: 100%;
     margin: 20px auto;
     border-collapse: collapse;
-  }
-  .comparison-table thead {
+}
+
+.comparison-table thead {
     background: linear-gradient(90deg, #fcb503 46%, #e5881b 54%, #fcb11a);
     color: #fff;
-  }
-  .comparison-table th {
+}
+
+.comparison-table th {
     padding: 12px;
     text-align: center;
     font-size: 14px;
     width: 80px;
 }
 
-  .site-row {
+.site-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -481,11 +536,13 @@ ul {
     border-radius: 10px;
     padding: 15px;
     margin: 15px 0;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-  }
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
 
 
-  .betting_site_logo {
+.betting_site_logo {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -493,28 +550,32 @@ ul {
     height: 80px;
     background-color: #fff;
 }
-  .site-details {
+
+.site-details {
     flex: 3;
     display: flex;
     justify-content: space-around;
     text-align: center;
     font-size: 14px;
     color: #fff;
-  }
-  .site-details div {
+}
+
+.site-details div {
     padding: 5px 10px;
-  }
-  .site-rating {
+}
+
+.site-rating {
     flex: 1;
     text-align: center;
     font-size: 16px;
-  }
-  .site-action {
+}
+
+.site-action {
     flex: 1;
     text-align: center;
-  }
-  
-  .site-details-fifth {
+}
+
+.site-details-fifth {
     width: 100px;
 }
 
@@ -532,26 +593,24 @@ ul {
 
 .site-details-forth {
     width: 200px;
-} 
+}
 
 
-  
+
 
 
 /* Top Betting Sites in Ireland css start */
 
 .batting_card_inner {
     padding: 20px;
-    border: 2px solid #fff;
     border-radius: 15px;
     transition: all 0.5s ease-in-out;
-    /* background-color: #e26aca; */
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
 }
 
 .batting_card_inner:hover {
-    border: 2px solid #e26aca;
     transform: translateY(-5px);
-    box-shadow: 0 6px 24px rgba(252,181,3,0.18);
+    box-shadow: 0 6px 24px rgba(252, 181, 3, 0.70);
 }
 
 .batting_card_inner h2 {
@@ -575,6 +634,7 @@ ul {
     cursor: pointer;
     margin-bottom: 10px;
 }
+
 .promo-img {
     width: 100%;
     height: 120px;
@@ -585,28 +645,34 @@ ul {
     background-position: center;
     transition: filter 0.3s;
 }
+
 .promo-img-paddypower {
     background-image: url('../images/paddy-power.png');
 }
+
 .promo-img-boylesports {
     background-image: url('../images/game-logo2.png');
 }
+
 .promo-img-bet365 {
     background-image: url('../images/Bet365_Logo.svg.png');
 }
+
 .promo-img-ladbrokes {
     background-image: url('../images/game-logo4.png');
 }
+
 .promo-img-888sport {
     background-image: url('../images/game-logo5.png');
 }
+
 .promo-text {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 120px;
-    background: rgba(24,0,58,0.95);
+    background: rgba(24, 0, 58, 0.95);
     color: #fff;
     display: flex;
     align-items: center;
@@ -620,13 +686,16 @@ ul {
     flex-direction: column;
     padding: 10px;
 }
+
 .promo-text span {
     font-size: 15px;
     font-weight: 400;
 }
+
 .promo-card:hover .promo-text {
     opacity: 1;
 }
+
 .promo-card:hover .promo-img {
     filter: blur(2px) brightness(0.7);
 }
@@ -658,6 +727,7 @@ ul {
     width: 100%;
     height: 100%;
 }
+
 /* How We Rank Betting Sites section css end */
 
 
@@ -681,10 +751,12 @@ ul {
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
+
 .review-card:hover {
     transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 12px 32px rgba(24,0,58,0.18);
+    box-shadow: 0 12px 32px rgba(24, 0, 58, 0.18);
 }
+
 .review-paddypower {
     background-image: url('../images/paddy-power.png');
     background-position: center;
@@ -692,6 +764,7 @@ ul {
     background-repeat: no-repeat;
     background-color: #18003a;
 }
+
 .review-boylesports {
     background-image: url('../images/game-logo2.png');
     background-position: center;
@@ -699,6 +772,7 @@ ul {
     background-repeat: no-repeat;
     background-color: #001f5f;
 }
+
 .review-bet365 {
     background-image: url('../images/Bet365_Logo.svg.png');
     background-position: center;
@@ -706,6 +780,7 @@ ul {
     background-repeat: no-repeat;
     background-color: #007c5b;
 }
+
 .review-ladbrokes {
     background-image: url('../images/game-logo4.png');
     background-position: center;
@@ -713,6 +788,7 @@ ul {
     background-repeat: no-repeat;
     background-color: #e30517;
 }
+
 .review-888sport {
     background-image: url('../images/game-logo5.png');
     background-position: center;
@@ -720,13 +796,14 @@ ul {
     background-repeat: no-repeat;
     background-color: #fe5500;
 }
+
 .review-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(24,0,58,0.7);
+    background: rgba(24, 0, 58, 0.7);
     opacity: 0;
     display: flex;
     align-items: center;
@@ -734,9 +811,11 @@ ul {
     transition: opacity 0.3s;
     z-index: 2;
 }
+
 .review-card:hover .review-overlay {
     opacity: 1;
 }
+
 .review-btn {
     background: #fcb11a;
     color: #18003a;
@@ -745,16 +824,18 @@ ul {
     padding: 12px 36px;
     font-size: 18px;
     text-decoration: none;
-    box-shadow: 0 2px 8px rgba(24,0,58,0.18);
+    box-shadow: 0 2px 8px rgba(24, 0, 58, 0.18);
     transition: background 0.2s, color 0.2s;
     border: none;
     outline: none;
     display: inline-block;
 }
+
 .review-btn:hover {
     background: #fff;
     color: #e26aca;
 }
+
 .review-title {
     position: absolute;
     bottom: 20px;
@@ -763,6 +844,7 @@ ul {
     text-align: center;
     z-index: 3;
 }
+
 .review-title h3 {
     color: #fff;
     text-shadow: 0 2px 8px #000;
@@ -778,10 +860,11 @@ ul {
 
 
 /* footer section css start */
-
-.disclaimer_section {
-    
+.footer_section.py-5 {
+    background-color: rgba(0 0 0/60%);
+    background-blend-mode: multiply;
 }
+.disclaimer_section {}
 
 .footer_heading {
     border-bottom: 1px solid #fff;
@@ -856,7 +939,7 @@ ul {
     height: 496px;
 }
 
-.game_content .row .col-md-6{
+.game_content .row .col-md-6 {
     padding: 0;
 }
 
@@ -927,25 +1010,30 @@ ul {
     border-radius: 12px;
     /* margin-top: 3rem;
     margin-bottom: 3rem; */
-  }
-  .account_inner_text {
+}
+
+.account_inner_text {
     padding: 30px 20px 20px 20px;
-  }
-  .account_inner_text h2 {
+}
+
+.account_inner_text h2 {
     color: #fff;
     font-size: 2rem;
     line-height: 2.3rem;
-  }
-  .account_inner_text .para {
+}
+
+.account_inner_text .para {
     color: #fff;
     font-size: 1.1rem;
-  }
-  .account_list {
+}
+
+.account_list {
     list-style: none;
     padding: 0;
     margin: 1.5rem 0 0 0;
-  }
-  .account_list li {
+}
+
+.account_list li {
     display: flex;
     align-items: flex-start;
     margin-bottom: 1.1rem;
@@ -953,8 +1041,9 @@ ul {
     padding-left: 32px;
     color: #fff;
     font-size: 1.125rem;
-  }
-  .account_bullet {
+}
+
+.account_bullet {
     position: absolute;
     left: 0;
     top: 0.5rem;
@@ -964,18 +1053,21 @@ ul {
     border-radius: 50%;
     display: inline-block;
     margin-right: 12px;
-  }
-  .account_age {
+}
+
+.account_age {
     color: #fcb11a;
     font-size: 0.98em;
     margin-left: 4px;
-  }
-  .account_note {
+}
+
+.account_note {
     color: #fcb11a;
     font-size: 1.05rem;
     margin-top: 2rem;
-  }
-  .account_img {
+}
+
+.account_img {
     /* min-height: 220px; */
     height: 386px;
     background-image: url('../images/account-image-remove.png');
@@ -983,9 +1075,9 @@ ul {
     background-position: center;
     border-radius: 12px;
     background-repeat: no-repeat;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.13);
-  }
-  
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.13);
+}
+
 /* account section css end */
 
 
@@ -994,26 +1086,31 @@ ul {
 .deposit_section {
     border-radius: 12px;
     background: #0b001b;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.13);
-  }
-  .deposit_inner_text {
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.13);
+}
+
+.deposit_inner_text {
     padding: 30px 20px 20px 20px;
-  }
-  .deposit_inner_text h2 {
+}
+
+.deposit_inner_text h2 {
     color: #fff;
     font-size: 2rem;
     line-height: 2.3rem;
-  }
-  .deposit_inner_text .para {
+}
+
+.deposit_inner_text .para {
     color: #fff;
     font-size: 1.1rem;
-  }
-  .deposit_list {
+}
+
+.deposit_list {
     list-style: none;
     padding: 0;
     margin: 1.5rem 0 0 0;
-  }
-  .deposit_list li {
+}
+
+.deposit_list li {
     display: flex;
     align-items: flex-start;
     margin-bottom: 1.1rem;
@@ -1021,8 +1118,9 @@ ul {
     padding-left: 32px;
     color: #fff;
     font-size: 1.125rem;
-  }
-  .deposit_bullet {
+}
+
+.deposit_bullet {
     position: absolute;
     left: 0;
     top: 0.5rem;
@@ -1033,24 +1131,25 @@ ul {
     display: inline-block;
     margin-right: 12px;
 }
-  .deposit_note {
+
+.deposit_note {
     color: #fcb11a;
     font-size: 1.05rem;
     margin-top: 2rem;
-  }
+}
 
 
-  .deposit_img {
+.deposit_img {
     height: 410px;
     background-image: url('../images/deposite-imge.png');
     background-size: auto;
     background-position: center;
     border-radius: 12px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.13);
     width: 100%;
     background-repeat: no-repeat;
 }
-  
+
 /* reposite fund section css end */
 
 
@@ -1098,11 +1197,12 @@ ul {
     -moz-transition: all ease 0.4s;
     -ms-transition: all ease 0.4s;
     -o-transition: all ease 0.4s;
-}   
+}
 
 
 .bet_reponsibly {
     background-color: #0b001b;
+    border-radius: 1.275rem;
 }
 
 
@@ -1132,7 +1232,7 @@ ul {
     z-index: 0;
 }
 
-.banner_box {
+/* .banner_box {
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -1146,7 +1246,7 @@ ul {
     color: #fff;
     width: 80%;
     transform: translate(-50%, -50%);
-}
+} */
 
 .banner_box h2 {
     font-size: 3rem;
@@ -1158,25 +1258,29 @@ ul {
 .rg-section {
     /* background: #fff; */
     border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(101,40,193,0.07);
+    box-shadow: 0 4px 24px rgba(101, 40, 193, 0.07);
     padding: 2.5rem 2rem;
     margin-bottom: 2rem;
 }
+
 .rg-section h2,
 .rg-section h3 {
     color: #f7ad07;
     font-weight: 500;
 }
+
 .rg-section h2 {
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
 }
+
 .rg-section h3 {
     font-size: 1.3rem;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
     line-height: 2rem;
 }
+
 /* .rg-section .para {
     color: #222;
     font-size: 1.08rem;
@@ -1187,6 +1291,7 @@ ul {
     padding-left: 0;
     margin-bottom: 1.5rem;
 }
+
 .rg-list li {
     /* display: flex; */
     align-items: flex-start;
@@ -1194,6 +1299,7 @@ ul {
     font-size: 1.05rem;
     color: #fff;
 }
+
 .rg-bullet {
     display: inline-block;
     min-width: 8px;
@@ -1202,13 +1308,15 @@ ul {
     margin-top: 9px;
     background: linear-gradient(135deg, #ffd370 0%, #f7ad07 100%);
     border-radius: 50%;
-    box-shadow: 0 1px 4px rgba(247,172,4,0.18);
+    box-shadow: 0 1px 4px rgba(247, 172, 4, 0.18);
 }
+
 .rg-section a {
     color: #e26aca;
     text-decoration: underline;
     transition: color 0.2s;
 }
+
 .rg-section a:hover {
     color: #f7ad07;
 }
@@ -1279,105 +1387,144 @@ ul {
     width: calc(100% - 20px);
     margin: 0 auto;
     display: none
-    }
-    .hometable-mobile-flex {
+}
+
+.hometable-mobile-flex {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
-    }
-    
-    .hometable-mobile-logo img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        max-width: 247px;
-        border-radius: 12px;
-    }
-    
-    .hometable-mobile-logo a {
+}
+
+.hometable-mobile-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 247px;
+    border-radius: 12px;
+}
+
+.hometable-mobile-logo a {
     display: block;
-    }
-    
-    
-    
-    .hometable-mobile-flex {display: grid;grid-template-columns: 1fr 1fr;gap: 25px;align-items: center;}
-    
-    .hometable-mobile-logo img {
-        width: 150px;
-        height: 200px;
-        object-fit: cover;
-        max-height: 100px;
-    }
-    
-    .hometable-mobile-logo a {
+}
+
+
+
+.hometable-mobile-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+}
+
+.hometable-mobile-logo img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    max-height: 100px;
+}
+
+.hometable-mobile-logo a {
     display: block;
-    }
-    
-    
-    
-    .hometable-mobile-card {
-    background: #0b001b;
+}
+
+
+
+.hometable-mobile-card {
+    background: transparent;
     padding: 30px 17px;
     border-radius: 8px;
     box-shadow: rgb(255 255 255 / 20%) -1px 3px 20px 0px;
     margin-bottom: 27px;
-    }
-    
-    .hometable-mobile-content h3 {
-        font-weight: 700;
-        padding-bottom: 14px;
-        text-align: center;
-        line-height: normal;
-    }
-    
-    .hometable-mobile-content p {
+    backdrop-filter: blur(1px);
+}
+
+.hometable-mobile-content h3 {
+    font-weight: 700;
+    padding-bottom: 14px;
     text-align: center;
-    }
-    
-    .hometable-mobile-content p {padding-bottom: 10px;}
-    
-    .hometable-mobile-logo p {
+    line-height: normal;
+}
+
+.hometable-mobile-content p {
+    text-align: center;
+}
+
+.hometable-mobile-content p {
+    padding-bottom: 10px;
+}
+
+.hometable-mobile-logo p {
     font-size: 15px;
     text-align: left;
     padding-top: 16px;
-    }
-    
-    .hometable-mobile-bonus {
+}
+
+.hometable-mobile-bonus {
     margin-top: 17px;
-    }
+}
 
-    /* mobile screen card css end */
-
-
-    /*  */
-
-    .bonus-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        }
-        
-        .bonus-table th, .bonus-table td {
-        border: 1px solid #fff;
-        padding: 12px;
-        text-align: center;
-        font-size: 14px;
-        color: #fff;
-        }
-        table.bonus-table tr th {
-        color: #f7ad07;
-        }
-
-        /*  */
+/* mobile screen card css end */
 
 
-        .start-text {
-            height: 100%;
-            align-items: center;
-            display: flex;
-        }
+/*  */
+
+.bonus-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.bonus-table th,
+.bonus-table td {
+    border: 1px solid #fff;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+table.bonus-table tr th {
+    color: #f7ad07;
+}
+
+/*  */
+
+
+.start-text {
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
 
 
 
 
 
+.feature_promotion {
+    background-color: rgba(32, 7, 28, 0.9);
+    background-blend-mode: multiply;
+}
+
+.quick_links {
+    background-color: rgba(32, 7, 28, 0.7);
+    background-blend-mode: multiply;
+}
+
+.py-7 {
+    padding: 4.375rem 0;
+}
+
+.bg_white {
+    background-color: #f5f5f7;
+}
+
+.bg_white .para{
+    color: #000;
+}
+.text_theme{
+    color: #f7ad07;
+}
+
+.bg_dark{
+    background-color: #000;
+}
